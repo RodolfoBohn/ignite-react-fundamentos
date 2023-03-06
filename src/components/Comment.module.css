@@ -1,0 +1,83 @@
+.comment {
+  display: flex;
+  gap: 1rem;
+}
+
+.contentWrapper {
+  flex: 1;
+}
+
+.content {
+  background: var(--gray-700);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header button {
+  background: transparent;
+  border: 0;
+  line-height: 0;
+  border-radius: 2px;
+  color: var(--gray-400);
+  cursor: pointer;
+}
+
+.header button:hover {
+  color: var(--red-500);
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+}
+
+.author strong {
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.6;
+  color: var(--gray-100);
+}
+
+.author time {
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--gray-400);
+}
+
+.content p {
+  margin-top: 1rem;
+  color: var(--gray-300);
+}
+
+.contentWrapper footer {
+  margin-top: 1rem;
+}
+
+.contentWrapper footer button {
+  background: transparent;
+  border: 0;
+  color: var(--gray-400);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 2px;
+}
+
+.contentWrapper footer button:hover {
+  color: var(--green-300);
+}
+
+.contentWrapper footer button svg {
+  margin-right: 0.5rem;
+}
+
+.contentWrapper footer button span::before {
+  content: "\2022";
+  padding: 0 0.25rem;
+}
