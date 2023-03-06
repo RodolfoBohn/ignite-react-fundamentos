@@ -1,4 +1,10 @@
 .avatar {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 8px;
+}
+
+.avatarWithBorder {
   height: calc(3rem + 12px);
   width: calc(3rem + 12px);
   border-radius: 8px;

@@ -5,7 +5,10 @@ import styles from "./Comment.module.css";
 export const Comment = () => {
   return (
     <div className={styles.comment}>
-      <Avatar />
+      <Avatar
+        hasBorder={false}
+        src="https://this-person-does-not-exist.com/img/avatar-112a8a01001705d3d653e00b03c74898.jpg"
+      />
       <div className={styles.contentWrapper}>
         <div className={styles.content}>
           <header className={styles.header}>

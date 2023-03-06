@@ -1,10 +1,11 @@
 import styles from "./avatar.module.css";
 
-export const Avatar = ({ src }) => {
+export const Avatar = ({ src, hasBorder = true }) => {
+  console.log("HasBorder", hasBorder);
   return (
     <img
-      className={styles.avatar}
-      src="https://this-person-does-not-exist.com/img/avatar-112a8a01001705d3d653e00b03c74898.jpg"
+      className={hasBorder ? styles.avatarWithBorder : styles.avatar}
+      src={src}
     />
   );
 };
