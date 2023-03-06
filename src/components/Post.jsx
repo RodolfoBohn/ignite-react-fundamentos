@@ -2,7 +2,6 @@ import { Avatar } from "./Avatar";
 import styles from "./Post.module.css";
 
 export const Post = () => {
-  // return <h1>Post</h1>;
   return (
     <article className={styles.post}>
       <header className={styles.header}>
@@ -28,6 +27,13 @@ export const Post = () => {
           Temporibus, dignissimos?
         </p>
       </div>
+      <form className={styles.commentForm}>
+        <label>Deixe seu feedback</label>
+        <textarea placeholder="Deixe um comentário" />
+        <footer>
+          <button type="submit">Publicar</button>
+        </footer>
+      </form>
     </article>
   );
 };
