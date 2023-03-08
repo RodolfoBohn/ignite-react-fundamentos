@@ -3,7 +3,12 @@ import { useState } from "react";
 import { Avatar } from "./Avatar";
 import styles from "./Comment.module.css";
 
-export const Comment = ({ content, onRemoveComment }) => {
+interface CommentType {
+  content: string;
+  onRemoveComment: (comment: string) => void;
+}
+
+export const Comment = ({ content, onRemoveComment }: CommentType) => {
   const [counterLikes, setCounterLikes] = useState(0);
 
   function handleRemoveComment() {
